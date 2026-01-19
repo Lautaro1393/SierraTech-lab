@@ -2,6 +2,7 @@
             --accent: #00d2ff;
             --glass-bg: rgba(255, 255, 255, 0.05);
             --glass-border: rgba(255, 255, 255, 0.1);
+            --font-mono: 'Fira Code', 'Consolas', 'Roboto Mono', monospace;
         }
 
         body {
@@ -9,7 +10,7 @@
             margin: 0;
             color: white;
             /* Reemplaza 'URL_DE_LA_IMAGEN' con el link de la imagen que generé arriba */
-            background: url('./Gemini_Generated_Image_l23ckil23ckil23c.png') no-repeat center center fixed;
+            background: url('./img/Gemini_Generated_Image_l23ckil23ckil23c.png') no-repeat center center fixed;
             background-size: cover;
             background-color: #0a0a0a; /* Fallback */
         }
@@ -61,6 +62,25 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             transition: 0.3s;
         }
+
+        .glass-card h3 {
+    font-family: var(--font-mono);
+    font-size: 1.4rem; /* Un poco más chico para que no se vea tosco */
+    color: var(--accent);
+    letter-spacing: 0px; /* Las mono no necesitan tanto espaciado */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Opcional: le da más fuerza de "etiqueta" */
+    font-weight: bold;
+}
+
+.code-tag {
+    font-family: var(--font-mono);
+    background: rgba(0, 210, 255, 0.1); /* Fondo celeste muy suave */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--accent);
+}
 
         .glass-card:hover {
             border: 1px solid var(--accent);
