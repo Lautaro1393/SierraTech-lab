@@ -1,143 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sierra Tech | Hardware & Software</title>
-    <!-- <style>
-        :root {
-            --accent: #00d2ff;
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            color: white;
-            /* Reemplaza 'URL_DE_LA_IMAGEN' con el link de la imagen que generé arriba */
-            background: url('./Gemini_Generated_Image_l23ckil23ckil23c.png') no-repeat center center fixed;
-            background-size: cover;
-            background-color: #0a0a0a; /* Fallback */
-        }
-
-        /* Capa oscura para asegurar legibilidad */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: -1;
-        }
-
-        header {
-            padding: 1.5rem;
-            text-align: center;
-            backdrop-filter: blur(15px);
-            background: rgba(0, 0, 0, 0.4);
-            border-bottom: 1px solid var(--glass-border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo-text {
-            font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 3px;
-        }
-
-        .logo-text span { color: var(--accent); }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 4rem 1rem;
-        }
-
-        .hero { text-align: center; margin-bottom: 4rem; }
-
-        .glass-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 15px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            transition: 0.3s;
-        }
-
-        .glass-card:hover {
-            border: 1px solid var(--accent);
-            transform: scale(1.02);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        h2 {
-            color: var(--accent);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--accent);
-            padding-left: 15px;
-        }
-
-        .btn {
-            background: var(--accent);
-            color: #000;
-            padding: 12px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-
-        footer { text-align: center; padding: 3rem; color: #aaa; }
-    </style> -->
 </head>
+
 <body>
 
-<header>
-    <div class="logo-text">SIERRA <span>TECH</span></div>
-</header>
 
-<div class="container">
-    <section class="hero">
-        <h1>Arquitectura Tecnológica a medida</h1>
-        <p>Desde la soldadura de precisión hasta el despliegue de <span class="code-tag">software</span> .</p>
-    </section>
+    <header>
+        <div class="logo-text">SIERRA <span>TECH</span>_LAB</div>
+    </header>
 
-    <h2>Desarrollo de Software</h2>
-    <div class="grid">
-        <div class="glass-card">
-            <h3>Google AppSheet</h3>
-            <p>Especialista en digitalización de procesos. Mi última implementación: Sistema de gestión de stock con trazabilidad QR y firma digital.</p>
+    <main class="container">
+        <section class="hero">
+            <h1>Arquitectura Tecnológica</h1>
+            <p>Desde la soldadura de precisión hasta el despliegue de <span class="tech-tag">software</span>.</p>
+        </section>
+
+        <h2>// Desarrollo de Software</h2>
+        <div class="grid">
+            <div class="glass-card">
+                <h3>Google AppSheet</h3>
+                <p>Especialista en digitalización de procesos. Mi última implementación: Sistema de gestión de stock con
+                    <span class="tech-tag">trazabilidad QR</span> y <span class="tech-tag">firma digital</span>.
+                </p>
+            </div>
+            <div class="glass-card">
+                <h3>Web Apps & Portfolio</h3>
+                <p>Interfaces <span class="tech-tag">modernas</span> con enfoque en rendimiento y experiencia de usuario
+                    (<span class="tech-tag">UI/UX</span>).</p>
+            </div>
         </div>
+
+        <!-- Added class mt-large instead of inline style -->
+        <h2 class="mt-large">// Laboratorio Electrónico</h2>
         <div class="glass-card">
-            <h3>Web Apps & Portfolio</h3>
-            <p>Interfaces  <span class="code-tag">modernas</span>  con enfoque en rendimiento y experiencia de usuario (UI/UX).</p>
+            <h3>Reparaciones de Alta Complejidad</h3>
+            <p>Diagnóstico por <span class="tech-tag">termografía</span> y <span class="tech-tag">micro-soldadura</span>
+                en equipos portátiles y dispositivos móviles.</p>
+            <a href="https://wa.me/5491178267986" class="btn">Solicitar Presupuesto</a>
         </div>
+
+        <h2 class="mt-large">// Proyectos Destacados</h2>
+        <div class="grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20250424_200914978_AE.jpg" alt="Reparación Hardware - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20250424_204228244_HDR_AE.jpg" alt="Reparación Hardware - Vista 2"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20251223_005815010_AE.jpg" alt="Reparación Hardware - Vista 3"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Reconstrucción de pistas</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20250424_220915782_HDR_AE.jpg" alt="Limpieza química - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20250424_231551006_HDR_AE.jpg" alt="Limpieza química - Vista 2"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Limpieza química de sulfato</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20250711_092312534_AE.jpg" alt="Pin de carga - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20260122_015011766_AE.jpg" alt="Pin de carga - Vista 2"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Reparación de pin de carga</p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20251223_005815010_AE.jpg" alt="Batería - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20250905_200055255_HDR_AE.jpg" alt="Batería - Vista 2"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Cambio de batería</p>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20260118_014514943_HDR_AE.jpg" alt="Conector FPC - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20250424_200914978_AE.jpg" alt="Conector FPC - Vista 2"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Cambio de conector FPC</p>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="carousel-container">
+                    <img src="img/Reparaciones/IMG_20260122_230439794_AE.jpg" alt="Mantenimiento - Vista 1"
+                        class="project-img">
+                    <img src="img/Reparaciones/IMG_20260122_015011766_AE.jpg" alt="Mantenimiento - Vista 2"
+                        class="project-img">
+                </div>
+                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
+                <div class="carousel-indicators"></div>
+                <p class="project-caption">Mantenimiento preventivo</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
     </div>
 
-    <h2 style="margin-top: 4rem;">Laboratorio Electrónico</h2>
-    <div class="glass-card">
-        <h3>Reparaciones de Alta Complejidad</h3>
-        <p>Diagnóstico por termografía y micro-soldadura en equipos portátiles y dispositivos móviles.</p>
-        <a href="https://wa.me/5491122506879" class="btn">Solicitar Presupuesto</a>
-    </div>
-</div>
+    <footer>
+        <p>Sierra Tech &copy; 2026 | Almagro, Buenos Aires</p>
+    </footer>
 
-<footer>
-    <p>Sierra Tech &copy; 2026 | Almagro, Buenos Aires</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
