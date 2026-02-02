@@ -11,7 +11,7 @@ body {
     margin: 0;
     color: white;
     /* Reemplaza 'URL_DE_LA_IMAGEN' con el link de la imagen que generé arriba */
-    background: url('./img/Gemini_Generated_Image_l23ckil23ckil23c.png') no-repeat center center fixed;
+    background: url('./img/Gemini_Generated_Image_l23ckil23ckil23c.webp') no-repeat center center fixed;
     background-size: cover;
     background-color: #0a0a0a;
     /* Fallback */
