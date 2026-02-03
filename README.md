@@ -7,7 +7,7 @@
 ![Licencia](https://img.shields.io/badge/Licencia-Proprietaria-lightgrey)
 
 <p align="center">
-  <img src="/img/preview.png" alt="Vista Previa Sierra Tech" width="100%">
+  <img src="/img/preview.webp" alt="Vista Previa Sierra Tech" width="100%">
 </p>
 ## 📖 Sobre el Proyecto
 
