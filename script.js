@@ -154,16 +154,17 @@
 
   function renderHardwareCard(item) {
     const cover = item.fotos[0];
+    const titleId = `pc-title-${escapeHtml(item.id)}`;
     return `
       <article class="portfolio-card" tabindex="0" role="button"
-        aria-label="Ver detalle de ${escapeHtml(item.titulo)}"
+        aria-labelledby="${titleId}"
         data-item-id="${escapeHtml(item.id)}">
         <div class="portfolio-card__cover">
           <img src="${escapeHtml(cover.src)}" alt="${escapeHtml(cover.alt)}"
             loading="lazy" decoding="async" width="400" height="300">
         </div>
         <div class="portfolio-card__body">
-          <h3 class="portfolio-card__title">${escapeHtml(item.titulo)}</h3>
+          <h3 id="${titleId}" class="portfolio-card__title">${escapeHtml(item.titulo)}</h3>
           <div class="portfolio-card__meta">
             <span class="dot dot--accent"></span>
             <span>${escapeHtml(item.categoria)}</span>
@@ -175,16 +176,17 @@
   }
 
   function renderSoftwareCard(item) {
+    const titleId = `pc-title-${escapeHtml(item.id)}`;
     return `
       <article class="portfolio-card" tabindex="0" role="button"
-        aria-label="Ver detalle de ${escapeHtml(item.titulo)}"
+        aria-labelledby="${titleId}"
         data-item-id="${escapeHtml(item.id)}">
         <div class="portfolio-card__cover">
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.titulo)}"
             loading="lazy" decoding="async" width="400" height="300">
         </div>
         <div class="portfolio-card__body">
-          <h3 class="portfolio-card__title">${escapeHtml(item.titulo)}</h3>
+          <h3 id="${titleId}" class="portfolio-card__title">${escapeHtml(item.titulo)}</h3>
           <div class="portfolio-card__stack">
             ${item.stack.map(s => `<span class="chip">${escapeHtml(s)}</span>`).join('')}
           </div>
