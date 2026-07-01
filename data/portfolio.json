@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "items": [
+    {
+      "id": "hw-reconstruccion-pistas",
+      "tipo": "hardware",
+      "slug": "reconstruccion-pistas",
+      "titulo": "Reconstrucción de pistas",
+      "categoria": "Micro-soldadura",
+      "fecha": "2025-04-24",
+      "descripcionCorta": "Reconstrucción de pistas quemadas en placa lógica de MacBook con puente de micro-cable y máscara UV.",
+      "descripcionLarga": "El equipo presentaba cortocircuito en la línea de carga. Se removió el componente quemado con estación de aire caliente, se reconstruyó la pista con micro-cable AWG 40, se aplicó máscara UV y se verificó continuidad con multímetro de precisión.\n\nTrabajo realizado bajo microscopio trinocular con iluminación LED controlada. Resultado: equipo encendido, carga estable, sin recalentamientos.",
+      "fotos": [
+        { "src": "img/Reparaciones/reconstruccion-pistas-01.webp", "alt": "Vista superior de la placa lógica con la zona dañada" },
+        { "src": "img/Reparaciones/reconstruccion-pistas-02.webp", "alt": "Detalle del micro-cable puente reconstruyendo la pista" },
+        { "src": "img/Reparaciones/reconstruccion-pistas-03.webp", "alt": "Resultado final con máscara UV aplicada" }
+      ],
+      "tags": ["MacBook", "micro-soldadura", "SMD"]
+    },
+    {
+      "id": "hw-limpieza-quimica-sulfato",
+      "tipo": "hardware",
+      "slug": "limpieza-quimica-sulfato",
+      "titulo": "Limpieza química de sulfato",
+      "categoria": "Mantenimiento",
+      "fecha": "2025-04-24",
+      "descripcionCorta": "Lavado ultrasónico con solución desulfatante en placa mojada por líquido. Recuperación de pistas y contactos.",
+      "descripcionLarga": "Equipo expuesto a líquido (café). Se desarmó completamente, se lavó la placa en baño ultrasónico con solución específica para sulfato, se cepilló manualmente bajo microscopio y se secó en horno de convección a temperatura controlada.\n\nResultado: sin residuos, sin cortos, equipo funcional al 100%.",
+      "fotos": [
+        { "src": "img/Reparaciones/limpieza-quimica-sulfato-01.webp", "alt": "Placa lógica con residuos de sulfato visibles" },
+        { "src": "img/Reparaciones/limpieza-quimica-sulfato-02.webp", "alt": "Detalle de contactos después del lavado químico" }
+      ],
+      "tags": ["líquido", "ultrasonido", "mantenimiento"]
+    },
+    {
+      "id": "hw-pin-de-carga",
+      "tipo": "hardware",
+      "slug": "pin-de-carga",
+      "titulo": "Reparación de pin de carga",
+      "categoria": "Micro-soldadura",
+      "fecha": "2025-07-11",
+      "descripcionCorta": "Cambio de conector USB-C con refuerzo de pads y reballing del pin central en placa de notebook.",
+      "descripcionLarga": "El pin de carga no hacía contacto. Se desoldó el conector original con aire caliente, se limpió el pad, se estañó nuevamente y se colocó el conector nuevo con flujo no-clean.\n\nVerificación final: carga rápida detectada, transferencia de datos OK.",
+      "fotos": [
+        { "src": "img/Reparaciones/pin-de-carga-01.webp", "alt": "Conector USB-C desmontado listo para reemplazo" },
+        { "src": "img/Reparaciones/pin-de-carga-02.webp", "alt": "Pin de carga nuevo soldado en placa" }
+      ],
+      "tags": ["USB-C", "notebook", "micro-soldadura"]
+    },
+    {
+      "id": "hw-cambio-bateria",
+      "tipo": "hardware",
+      "slug": "cambio-bateria",
+      "titulo": "Cambio de batería",
+      "categoria": "Reemplazo de componentes",
+      "fecha": "2025-12-23",
+      "descripcionCorta": "Reemplazo de batería hinchada en smartphone con calibración posterior del sistema de carga.",
+      "descripcionLarga": "Batería con hinchamiento detectable (riesgo de incendio). Se despegó con solución especializada, se limpió el adhesivo residual y se instaló batería nueva homologada.\n\nSe realizó calibración del medidor de carga y prueba de ciclos. Resultado: autonomía restaurada al 100% del valor de fábrica.",
+      "fotos": [
+        { "src": "img/Reparaciones/cambio-bateria-01.webp", "alt": "Batería hinchada recién extraída del equipo" }
+      ],
+      "tags": ["smartphone", "batería", "reemplazo"]
+    },
+    {
+      "id": "hw-conector-fpc",
+      "tipo": "hardware",
+      "slug": "conector-fpc",
+      "titulo": "Cambio de conector FPC",
+      "categoria": "Reemplazo de componentes",
+      "fecha": "2026-01-18",
+      "descripcionCorta": "Reemplazo de conector FPC de pantalla en tablet con soldado de precisión SMD.",
+      "descripcionLarga": "El conector FPC de la pantalla tenía pines doblados y uno quebrado, lo que impedía la conexión confiable. Se removió con pistola de calor a temperatura controlada, se limpió la pista y se soldó el conector nuevo con microscopio.\n\nVerificación: imagen sin parpadeos, táctil funcionando en toda el área.",
+      "fotos": [
+        { "src": "img/Reparaciones/conector-fpc-01.webp", "alt": "Conector FPC de pantalla dañado con pin quebrado" }
+      ],
+      "tags": ["tablet", "FPC", "SMD"]
+    },
+    {
+      "id": "hw-mantenimiento-preventivo",
+      "tipo": "hardware",
+      "slug": "mantenimiento-preventivo",
+      "titulo": "Mantenimiento preventivo",
+      "categoria": "Mantenimiento",
+      "fecha": "2026-01-22",
+      "descripcionCorta": "Limpieza interna, cambio de pasta térmica y revisión general de notebook con reporte de estado.",
+      "descripcionLarga": "Notebook con 3 años de uso sin mantenimiento. Se desarmó, se limpió el cooler y los heatpipes, se cambió la pasta térmica por una de alta conductividad, se reemplazaron los thermal pads degradados y se verificó el estado del SSD y la RAM.\n\nSe entregó reporte con estado de cada componente y recomendaciones. Temperatura de operación reducida 18°C bajo carga.",
+      "fotos": [
+        { "src": "img/Reparaciones/mantenimiento-preventivo-01.webp", "alt": "Interior de notebook con acumulación de polvo en cooler" }
+      ],
+      "tags": ["notebook", "pasta térmica", "preventivo"]
+    },
+    {
+      "id": "sw-la-cocina-de-jose",
+      "tipo": "software",
+      "slug": "la-cocina-de-jose",
+      "titulo": "LaCocinaDeJose",
+      "categoria": "Web a medida",
+      "fecha": "2026-06-15",
+      "descripcionCorta": "Sitio web institucional para restaurante con carta digital y formulario de reservas.",
+      "descripcionLarga": "Desarrollo completo de la presencia digital de La Cocina de José. Diseño responsive mobile-first, carta editable sin redeploy, integración con WhatsApp para reservas y SEO local para Almagro.\n\nStack: HTML semántico, CSS con tokens y variables, JavaScript vanilla sin dependencias, deploy automático en Vercel.",
+      "cover": "img/proyectos/la-cocina-de-jose.svg",
+      "stack": ["HTML", "CSS", "JavaScript", "Vercel"],
+      "links": {
+        "deploy": "https://la-cocina-de-jose.vercel.app",
+        "repo": "https://github.com/Lautaro1393/la-cocina-de-jose"
+      }
+    }
+  ]
+}

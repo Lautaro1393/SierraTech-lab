@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="LaCocinaDeJose — placeholder">
+  <rect width="400" height="300" fill="#18243D"/>
+  <rect x="0" y="0" width="400" height="300" fill="none" stroke="#2EDC1B" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="200" y="140" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="22" fill="#DCE2F3">LaCocinaDeJose</text>
+  <text x="200" y="170" text-anchor="middle" font-family="'Geist', sans-serif" font-size="14" fill="#9CA3AF">cover pendiente</text>
+</svg>
