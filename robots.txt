@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lautaro1393.github.io/SierraTech-lab/sitemap.xml

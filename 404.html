@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>404 · SierraTech Lab</title>
+  <meta name="description" content="La página que buscás no existe. Volvé al inicio o contactanos por WhatsApp.">
+  <meta name="theme-color" content="#0D1117" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Geist:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .notfound { min-height: calc(100vh - 72px); min-height: calc(100svh - 72px); display: flex; align-items: center; padding-block: var(--space-16); }
+    .notfound__content { text-align: center; max-width: 560px; margin-inline: auto; }
+    .notfound__code { font-family: var(--font-mono); font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: var(--accent); margin-bottom: var(--space-4); }
+    .notfound__title { font-family: var(--font-display); font-size: 56px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: var(--space-4); }
+    .notfound__desc { color: var(--ink-secondary); margin-bottom: var(--space-8); }
+    .notfound__ctas { display: flex; flex-direction: column; gap: var(--space-3); align-items: center; }
+    @media (min-width: 768px) { .notfound__ctas { flex-direction: row; justify-content: center; } }
+  </style>
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('sierratech-theme');
+        var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a href="./" class="logo" aria-label="Sierra Tech Lab — ir al inicio">
+        <span class="logo__sierra">SIERRA</span>
+        <span class="logo__tech">TECH</span><span class="logo__lab">_LAB</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="./#servicios" class="nav-link">Servicios</a>
+        <a href="./#portafolio" class="nav-link">Portafolio</a>
+        <a href="./#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="./#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <div class="site-header__actions">
+        <a href="https://wa.me/5491178267986" class="icon-btn icon-btn--wa" aria-label="Abrir WhatsApp" rel="noopener noreferrer" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M17.6 14.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="notfound">
+    <div class="container notfound__content">
+      <p class="notfound__code">// ERROR 404</p>
+      <h1 class="notfound__title">Esta página no existe.</h1>
+      <p class="notfound__desc">La URL que buscás no apunta a nada dentro del banco. Volvé al inicio o contactanos por WhatsApp y te respondemos a la brevedad.</p>
+      <div class="notfound__ctas">
+        <a href="./" class="btn btn--primary btn--lg">Volver al inicio</a>
+        <a href="https://wa.me/5491178267986" class="btn btn--ghost btn--lg" rel="noopener noreferrer" target="_blank">Hablar por WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var header = document.querySelector('[data-site-header]');
+      if (!header) return;
+      var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 80); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
