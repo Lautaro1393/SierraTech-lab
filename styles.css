@@ -819,15 +819,14 @@ h1, h2, h3, h4 {
   max-width: 960px;
   max-height: calc(100vh - 2 * var(--space-4));
   max-height: calc(100svh - 2 * var(--space-4));
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-lg);
   overflow: hidden;
   animation: lb-zoom-in 220ms var(--ease-out);
 }
 @media (min-width: 768px) {
-  .lightbox__panel { grid-template-columns: 1fr; }
+  .lightbox__panel { flex-direction: row; max-width: 1040px; }
 }
 
 .lightbox__close {
@@ -878,13 +877,21 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 240px;
-  max-height: 50vh;
+  flex: 0 0 auto;
+  min-height: 200px;
+  max-height: 40vh;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .lightbox__figure { flex: 0 0 55%; max-height: none; align-self: stretch; }
 }
 .lightbox__img {
   max-width: 100%;
-  max-height: 50vh;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 .lightbox__counter {
   position: absolute;
@@ -908,7 +915,9 @@ h1, h2, h3, h4 {
   flex-direction: column;
   gap: var(--space-3);
   overflow-y: auto;
-  max-height: calc(100vh - 2 * var(--space-4));
+  flex: 1 1 auto;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 .lightbox__title {
   font-size: 24px;
