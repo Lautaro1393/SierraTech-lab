@@ -93,16 +93,32 @@
       "id": "sw-la-cocina-de-jose",
       "tipo": "software",
       "slug": "la-cocina-de-jose",
-      "titulo": "LaCocinaDeJose",
+      "titulo": "La Cocina de José",
       "categoria": "Web a medida",
-      "fecha": "2026-06-15",
-      "descripcionCorta": "Sitio web institucional para restaurante con carta digital y formulario de reservas.",
-      "descripcionLarga": "Desarrollo completo de la presencia digital de La Cocina de José. Diseño responsive mobile-first, carta editable sin redeploy, integración con WhatsApp para reservas y SEO local para Almagro.\n\nStack: HTML semántico, CSS con tokens y variables, JavaScript vanilla sin dependencias, deploy automático en Vercel.",
-      "cover": "img/proyectos/la-cocina-de-jose.svg",
-      "stack": ["HTML", "CSS", "JavaScript", "Vercel"],
+      "fecha": "2026-07-01",
+      "descripcionCorta": "Landing transaccional mobile-first para restaurante, con menú, carrito y pedido por WhatsApp.",
+      "descripcionLarga": "Sitio completo para un local de comida en Lomas del Mirador. El cliente navega el menú, arma un carrito con cantidades y finaliza el pedido: la app arma un mensaje pre-armado y lo manda por WhatsApp al restaurante.\n\nStack: Next.js 15 con App Router, TypeScript, Tailwind 4, Zustand con persistencia del carrito en localStorage, lucide-react para iconos, fuentes Fraunces + Inter, deploy en Vercel. JSON-LD de Restaurant + FAQPage para SEO local.\n\nFuncionalidades clave: menú categorizado con scroll-spy, carrito en drawer lateral con checkout, accesibilidad WCAG (skip-links, focus visible, prefers-reduced-motion), diseño responsive con mobile-first.",
+      "cover": "img/proyectos/la-cocina-de-jose.webp",
+      "stack": ["Next.js 15", "TypeScript", "Tailwind 4", "Zustand", "Vercel"],
       "links": {
-        "deploy": "https://la-cocina-de-jose.vercel.app",
-        "repo": "https://github.com/Lautaro1393/la-cocina-de-jose"
+        "deploy": "https://lacocinadejose.vercel.app",
+        "repo": "https://github.com/Lautaro1393/la_cocina_de_jose_2"
+      }
+    },
+    {
+      "id": "sw-software-factory",
+      "tipo": "software",
+      "slug": "software-factory",
+      "titulo": "Software Factory",
+      "categoria": "Proyecto académico",
+      "fecha": "2026-01-15",
+      "descripcionCorta": "Sitio web estático para un proyecto grupal académico: proceso, herramientas, calidad y evidencia de implementación.",
+      "descripcionLarga": "Trabajo final de la materia Programación sobre Redes (IFTS 24, Grupo 3). Sitio estático que documenta el ciclo de vida de una Software Factory académica: proceso iterativo con sprints, herramientas (Git, Trello, Antigravity, MCP), evidencia visual del flujo de trabajo y sección de garantía de calidad con code reviews.\n\nStack: HTML semántico, CSS modular con metodología BEM, JavaScript vanilla para interactividad (tabs de herramientas, lightbox de evidencia, carruseles), deploy en GitHub Pages.\n\nMi aporte como integrante del grupo: desarrollé la sección de Garantía de Calidad y el footer. Trabajamos con metodología ágil, branches feature_ por integrante, pull requests con code review antes de mergear a main.",
+      "cover": "img/proyectos/software-factory.webp",
+      "stack": ["HTML", "CSS (BEM)", "JavaScript", "GitHub Pages"],
+      "links": {
+        "deploy": "https://jbonomo-ifts24.github.io/SoftwareFactory/",
+        "repo": "https://github.com/JBONOMO-ifts24/SoftwareFactory"
       }
     }
   ]
