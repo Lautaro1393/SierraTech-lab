@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" role="img" aria-label="Sierra Tech Lab">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; font-weight: 700; }
+    .sierra { fill: #DCE2F3; }
+    .tech { fill: #2EDC1B; }
+    .lab { fill: #DCE2F3; }
+  </style>
+  <text x="0" y="34" class="mono sierra" font-size="26" letter-spacing="-0.5">SIERRA</text>
+  <text x="108" y="34" class="mono tech" font-size="26" letter-spacing="-0.5">TECH</text>
+  <text x="194" y="34" class="mono lab" font-size="26" letter-spacing="-0.5">_LAB</text>
+</svg>

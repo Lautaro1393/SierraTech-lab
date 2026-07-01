@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="SierraTech Lab — Reparación y software a medida">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#18243D"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(46,220,27,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g transform="translate(96, 96)">
+    <text font-family="'JetBrains Mono', monospace" font-weight="700" font-size="22" fill="#9CA3AF" letter-spacing="2">// SIERRA TECH_LAB</text>
+  </g>
+  <g transform="translate(96, 180)">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="92" fill="#DCE2F3" letter-spacing="-2">Arquitectura</text>
+    <text y="100" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="92" fill="#2EDC1B" letter-spacing="-2">Tecnológica.</text>
+  </g>
+  <g transform="translate(96, 470)">
+    <text font-family="'Geist', 'Inter', sans-serif" font-size="28" fill="#9CA3AF">Micro-soldadura · Reparación · Web a medida</text>
+  </g>
+  <g transform="translate(96, 540)">
+    <rect width="120" height="6" fill="#2EDC1B"/>
+  </g>
+</svg>
