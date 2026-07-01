@@ -1,146 +1,396 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sierra Tech | Hardware & Software</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SierraTech Lab · Reparación &amp; Software</title>
+  <meta name="description" content="Laboratorio electrónico en Almagro: micro-soldadura, reconstrucción de pistas, diagnóstico. Además, desarrollo web a medida y automatización con AppSheet.">
+  <meta name="theme-color" content="#0D1117" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Geist:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SierraTech Lab · Reparación &amp; Software">
+  <meta property="og:description" content="Micro-soldadura, reconstrucción de pistas y desarrollo web a medida en Almagro, Buenos Aires.">
+  <meta property="og:image" content="https://lautaro1393.github.io/SierraTech-lab/img/og-cover.svg">
+  <meta property="og:url" content="https://lautaro1393.github.io/SierraTech-lab/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SierraTech Lab · Reparación &amp; Software">
+  <meta name="twitter:description" content="Micro-soldadura, reconstrucción de pistas y desarrollo web a medida en Almagro, Buenos Aires.">
+  <meta name="twitter:image" content="https://lautaro1393.github.io/SierraTech-lab/img/og-cover.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SierraTech Lab",
+    "description": "Reparación electrónica y desarrollo de software",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Almagro",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "url": "https://lautaro1393.github.io/SierraTech-lab/",
+    "telephone": "+54 9 11 7826-7986"
+  }
+  </script>
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('sierratech-theme');
+        var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
 
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a href="#top" class="logo" aria-label="Sierra Tech Lab — ir al inicio">
+        <span class="logo__sierra">SIERRA</span>
+        <span class="logo__tech">TECH</span><span class="logo__lab">_LAB</span>
+      </a>
 
-    <header>
-        <div class="logo-text">SIERRA <span>TECH</span>_LAB</div>
-    </header>
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#portafolio" class="nav-link">Portafolio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
 
-    <main class="container">
-        <section class="hero">
-            <h1>Arquitectura Tecnológica</h1>
-            <p>Desde la soldadura de precisión hasta el despliegue de <span class="tech-tag">software</span>.</p>
-        </section>
+      <div class="site-header__actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Cambiar a modo claro">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+          </svg>
+        </button>
 
-        <h2>// Desarrollo de Software</h2>
-        <div class="grid">
-            <div class="glass-card">
-                <h3>Google AppSheet</h3>
-                <p>Especialista en digitalización de procesos. Mi última implementación: Sistema de gestión de stock con
-                    <span class="tech-tag">trazabilidad QR</span> y <span class="tech-tag">firma digital</span>.
-                </p>
-            </div>
-            <div class="glass-card">
-                <h3>Web Apps & Portfolio</h3>
-                <p>Interfaces <span class="tech-tag">modernas</span> con enfoque en rendimiento y experiencia de usuario
-                    (<span class="tech-tag">UI/UX</span>).</p>
-            </div>
-        </div>
+        <a href="https://wa.me/5491178267986" class="icon-btn icon-btn--wa" aria-label="Abrir WhatsApp" rel="noopener noreferrer" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M17.6 14.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.2.8.8-3.1-.2-.3C4 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/>
+          </svg>
+        </a>
 
-        <!-- Added class mt-large instead of inline style -->
-        <h2 class="mt-large">// Laboratorio Electrónico</h2>
-        <div class="glass-card">
-            <h3>Reparaciones de Alta Complejidad</h3>
-            <p>Diagnóstico por <span class="tech-tag">termografía</span> y <span class="tech-tag">micro-soldadura</span>
-                en equipos portátiles y dispositivos móviles.</p>
-            <a href="https://wa.me/5491178267986" class="btn">Solicitar Presupuesto</a>
-        </div>
-
-        <h2 class="mt-large">// Proyectos Destacados</h2>
-        <div class="grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20250424_200914978_AE.webp" alt="Reparación Hardware - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20250424_204228244_HDR_AE.webp" alt="Reparación Hardware - Vista 2"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20251223_005815010_AE.webp" alt="Reparación Hardware - Vista 3"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Reconstrucción de pistas</p>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20250424_220915782_HDR_AE.webp" alt="Limpieza química - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20250424_231551006_HDR_AE.webp" alt="Limpieza química - Vista 2"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Limpieza química de sulfato</p>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20250711_092312534_AE.webp" alt="Pin de carga - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20260122_015011766_AE.webp" alt="Pin de carga - Vista 2"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Reparación de pin de carga</p>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20251223_005815010_AE.webp" alt="Batería - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20250905_200055255_HDR_AE.webp" alt="Batería - Vista 2"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Cambio de batería</p>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20260118_014514943_HDR_AE.webp" alt="Conector FPC - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20250424_200914978_AE.webp" alt="Conector FPC - Vista 2"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Cambio de conector FPC</p>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card">
-                <div class="carousel-container">
-                    <img src="img/Reparaciones/IMG_20260122_230439794_AE.webp" alt="Mantenimiento - Vista 1"
-                        class="project-img">
-                    <img src="img/Reparaciones/IMG_20260122_015011766_AE.webp" alt="Mantenimiento - Vista 2"
-                        class="project-img">
-                </div>
-                <button class="zoom-btn" aria-label="Ver imagen completa">🔍</button>
-                <div class="carousel-indicators"></div>
-                <p class="project-caption">Mantenimiento preventivo</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="lightbox-caption"></div>
+        <button type="button" class="icon-btn hamburger" data-menu-trigger aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <footer>
-        <p>Sierra Tech &copy; 2026 | Almagro, Buenos Aires</p>
-    </footer>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <div class="mobile-menu__overlay" data-menu-close></div>
+    <aside class="mobile-menu__panel glass glass--elev">
+      <div class="mobile-menu__head">
+        <span class="logo logo--small">
+          <span class="logo__sierra">SIERRA</span>
+          <span class="logo__tech">TECH</span><span class="logo__lab">_LAB</span>
+        </span>
+        <button type="button" class="icon-btn" data-menu-close aria-label="Cerrar menú">
+          <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Navegación mobile">
+        <a href="#servicios" class="mobile-menu__link" data-menu-link>Servicios</a>
+        <a href="#portafolio" class="mobile-menu__link" data-menu-link>Portafolio</a>
+        <a href="#sobre-mi" class="mobile-menu__link" data-menu-link>Sobre mí</a>
+        <a href="#contacto" class="mobile-menu__link" data-menu-link>Contacto</a>
+      </nav>
+      <a href="https://wa.me/5491178267986" class="btn btn--primary btn--block" rel="noopener noreferrer" target="_blank">
+        Hablar por WhatsApp
+        <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M14 3l7 7-3 1-4-4-1 1 4 4-1 3-7-7 5-5z"/>
+        </svg>
+      </a>
+    </aside>
+  </div>
 
-    <script src="script.js"></script>
+  <main id="main">
+
+    <section id="top" class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">// Sierra Tech Lab</p>
+        <h1 class="hero__title">Arquitectura Tecnológica.</h1>
+        <p class="hero__subtitle">Desde la soldadura de precisión hasta el despliegue de software. Un solo banco, dos disciplinas.</p>
+        <div class="hero__ctas">
+          <a href="#portafolio" class="btn btn--primary btn--lg" data-cta="hardware">Ver reparaciones</a>
+          <a href="#portafolio" class="btn btn--ghost btn--lg" data-cta="software">Ver proyectos</a>
+        </div>
+        <a href="#servicios" class="hero__scroll" aria-label="Ir a servicios">
+          <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">// Servicios</span>
+          <h2>Lo que hacemos</h2>
+        </header>
+        <div class="services-grid">
+          <article class="service-card glass glass--card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </span>
+            <h3>Reparación de alta complejidad</h3>
+            <p>Diagnóstico por termografía y micro-soldadura en equipos portátiles y dispositivos móviles.</p>
+          </article>
+
+          <article class="service-card glass glass--card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/>
+              </svg>
+            </span>
+            <h3>Micro-soldadura</h3>
+            <p>Reconstrucción de pistas, pines de carga, conectores FPC y componentes SMD bajo microscopio.</p>
+          </article>
+
+          <article class="service-card glass glass--card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </span>
+            <h3>Web a medida</h3>
+            <p>Sitios estáticos y dinámicos con foco en performance, accesibilidad y diseño técnico.</p>
+          </article>
+
+          <article class="service-card glass glass--card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </span>
+            <h3>Automatización con AppSheet</h3>
+            <p>Digitalización de procesos: stock con QR, formularios, firma digital y tableros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portafolio" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">// Portafolio</span>
+          <h2>Trabajos seleccionados</h2>
+        </header>
+
+        <div class="tabs glass glass--card" role="tablist" aria-label="Filtro de portafolio">
+          <button type="button" role="tab" class="tab" data-tab="hardware" aria-selected="true" aria-controls="panel-hardware">
+            <span>Reparaciones</span>
+            <span class="tab__count" data-tab-count>0</span>
+          </button>
+          <button type="button" role="tab" class="tab" data-tab="software" aria-selected="false" aria-controls="panel-software" tabindex="-1">
+            <span>Proyectos software</span>
+            <span class="tab__count" data-tab-count>0</span>
+          </button>
+        </div>
+
+        <div role="tabpanel" id="panel-hardware" data-panel="hardware" class="panel">
+          <div class="portfolio-grid" data-grid="hardware" aria-busy="true">
+            <p class="portfolio-empty">Cargando reparaciones…</p>
+          </div>
+        </div>
+
+        <div role="tabpanel" id="panel-software" data-panel="software" class="panel" hidden>
+          <div class="portfolio-grid" data-grid="software" aria-busy="true">
+            <p class="portfolio-empty">Cargando proyectos…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container sobre-mi">
+        <header class="section__header">
+          <span class="eyebrow">// Sobre mí</span>
+          <h2>Un banco, dos disciplinas</h2>
+        </header>
+        <div class="sobre-mi__grid">
+          <div class="sobre-mi__copy">
+            <p>Soy Lautaro. Hace varios años reparo equipos a nivel componente en un laboratorio en Almagro, Buenos Aires, y de a poco fui sumando desarrollo de software a la práctica.</p>
+            <p>Hoy el trabajo es el mismo: tomar un problema técnico, entender qué falla, y resolverlo. A veces con el soldador, a veces con código.</p>
+            <a href="https://github.com/Lautaro1393" class="btn btn--secondary" rel="noopener noreferrer" target="_blank">
+              Ver más en GitHub
+              <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17L17 7M7 7h10v10"/>
+              </svg>
+            </a>
+          </div>
+          <ul class="sobre-mi__skills" aria-label="Habilidades clave">
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              Micro-soldadura SMD
+            </li>
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              Reconstrucción de pistas
+            </li>
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              Diagnóstico termográfico
+            </li>
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              HTML / CSS / JavaScript
+            </li>
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              Google AppSheet
+            </li>
+            <li class="chip">
+              <span class="dot dot--accent"></span>
+              Git &amp; deploy
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">// Contacto</span>
+          <h2>Hablemos</h2>
+        </header>
+        <div class="contacto-grid">
+          <a href="https://wa.me/5491178267986?text=Hola%20SierraTech%2C%20me%20interesa%20m%C3%A1s%20informaci%C3%B3n" class="contacto-card glass glass--card" rel="noopener noreferrer" target="_blank">
+            <span class="contacto-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M17.6 14.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+              </svg>
+            </span>
+            <span class="contacto-card__label">WhatsApp</span>
+            <span class="contacto-card__value">+54 9 11 7826-7986</span>
+            <span class="contacto-card__cta">Iniciar conversación →</span>
+          </a>
+
+          <a href="mailto:contacto@sierratech.lab" class="contacto-card glass glass--card">
+            <span class="contacto-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+            </span>
+            <span class="contacto-card__label">Email</span>
+            <span class="contacto-card__value">contacto@sierratech.lab</span>
+            <span class="contacto-card__cta">Escribir un mail →</span>
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Almagro%2C+Buenos+Aires" class="contacto-card glass glass--card" rel="noopener noreferrer" target="_blank">
+            <span class="contacto-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </span>
+            <span class="contacto-card__label">Ubicación</span>
+            <span class="contacto-card__value">Almagro, CABA</span>
+            <span class="contacto-card__cta">Abrir en Maps →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo logo--small">
+          <span class="logo__sierra">SIERRA</span>
+          <span class="logo__tech">TECH</span><span class="logo__lab">_LAB</span>
+        </span>
+        <p class="site-footer__tagline">De los fierros al código. Almagro, Buenos Aires.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Navegación de pie">
+        <a href="#servicios" class="footer-link">Servicios</a>
+        <a href="#portafolio" class="footer-link">Portafolio</a>
+        <a href="#sobre-mi" class="footer-link">Sobre mí</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
+      </nav>
+      <div class="site-footer__social" aria-label="Redes">
+        <a href="https://github.com/Lautaro1393" class="icon-btn" rel="noopener noreferrer" target="_blank" aria-label="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/5491178267986" class="icon-btn" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M17.6 14.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.7 4.3 3.8 1.5.6 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="site-footer__copy">Sierra Tech © 2026 · Almagro, Buenos Aires</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="lightbox__overlay" data-lightbox-close></div>
+    <div class="lightbox__panel glass glass--elev">
+      <button type="button" class="lightbox__close" data-lightbox-close aria-label="Cerrar">
+        <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+
+      <button type="button" class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Imagen anterior">
+        <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <button type="button" class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Imagen siguiente">
+        <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" data-lb-image src="" alt="">
+        <figcaption class="lightbox__counter" data-lb-counter></figcaption>
+      </figure>
+
+      <div class="lightbox__body">
+        <p class="eyebrow" data-lb-category></p>
+        <h2 class="lightbox__title" id="lightbox-title" data-lb-title></h2>
+        <div class="lightbox__meta" data-lb-meta></div>
+        <div class="lightbox__desc" data-lb-desc></div>
+        <div class="lightbox__links" data-lb-links></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
-
 </html>
