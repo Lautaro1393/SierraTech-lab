@@ -7,8 +7,9 @@
     "start": "remotion studio",
     "build": "remotion render",
     "render:hero": "remotion render src/Root.tsx SierratechHero out/hero.mp4",
-    "render:intro": "remotion render src/Root.tsx SierratechIntro out/intro.mp4",
-    "render:all": "remotion render src/Root.tsx SierratechHero out/hero.mp4 && remotion render src/Root.tsx SierratechIntro out/intro.mp4"
+    "render:intro": "remotion render src/Root.tsx SierratechIntro out/intro.mp4 --codec=h264 --crf=28",
+    "render:herobg": "remotion render src/Root.tsx SierratechHeroBg out/hero-bg.mp4 --codec=h264 --crf=28",
+    "render:all": "npm run render:hero && npm run render:intro && npm run render:herobg"
   },
   "dependencies": {
     "@remotion/cli": "4.0.290",
