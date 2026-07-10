@@ -127,6 +127,70 @@
     });
   }
 
+  // Hero video: pausar si el usuario prefiere reducir motion,
+  // y pausar cuando no está visible (ahorra CPU y batería en mobile)
+  function bindHeroVideo() {
+    const video = document.querySelector('.hero__bg--video');
+    if (!video) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduceMotion.matches) {
+      video.pause();
+      video.removeAttribute('autoplay');
+      return;
+    }
+    // Si cambia la preferencia en vivo
+    reduceMotion.addEventListener('change', e => {
+      if (e.matches) {
+        video.pause();
+        video.removeAttribute('autoplay');
+      } else {
+        video.play().catch(() => {});
+      }
+    });
+
+    // Intentar reproducir. Algunos browsers requieren un gesto del usuario;
+    // pero autoplay+muted+playsinline funciona en la mayoría de casos.
+    const tryPlay = () => {
+      video.play().catch(err => {
+        // Si el browser bloquea autoplay, no es crítico: el poster se muestra.
+        // Se reintentará al primer user gesture.
+        const resume = () => {
+          video.play().catch(() => {});
+          document.removeEventListener('click', resume);
+          document.removeEventListener('scroll', resume);
+          document.removeEventListener('keydown', resume);
+        };
+        document.addEventListener('click', resume, { once: true });
+        document.addEventListener('scroll', resume, { once: true, passive: true });
+        document.addEventListener('keydown', resume, { once: true });
+      });
+    };
+    // Esperar a que tenga metadata y luego intentar
+    if (video.readyState >= 1) {
+      tryPlay();
+    } else {
+      video.addEventListener('loadedmetadata', tryPlay, { once: true });
+    }
+
+    // Pausar cuando el hero sale del viewport (ahorra batería en mobile)
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        },
+        { threshold: 0.05 }
+      );
+      io.observe(video);
+    }
+  }
+
   // ============================================================
   // 6. PORTAFOLIO: FETCH + RENDER
   // ============================================================
@@ -433,6 +497,7 @@
     bindMobileMenu();
     bindSmoothScroll();
     bindHeroCtas();
+    bindHeroVideo();
     bindTabs();
     bindLightbox();
     loadPortfolio();

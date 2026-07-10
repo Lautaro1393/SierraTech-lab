@@ -128,7 +128,17 @@
   <main id="main">
 
     <section id="top" class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
+      <video
+        class="hero__bg hero__bg--video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="./img/hero/hero-bg-poster.jpg"
+        aria-hidden="true">
+        <source src="./img/hero/hero-bg.mp4" type="video/mp4">
+      </video>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
         <p class="eyebrow">// Sierra Tech Lab</p>
