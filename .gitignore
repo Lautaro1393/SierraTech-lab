@@ -19,3 +19,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Remotion / Studio
+studio/out/
+studio/.remotion-cache/
+studio/public/videos/*.mp4
+studio/public/videos/*.webm
+!studio/public/videos/.gitkeep
+studio/bundle/
