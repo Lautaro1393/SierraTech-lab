@@ -6,21 +6,28 @@
   "scripts": {
     "start": "remotion studio",
     "build": "remotion render",
+    "preprocess": "node scripts/preprocess-samsung-a12.mjs",
+    "preprocess:dry": "node scripts/preprocess-samsung-a12.mjs --dry-run",
     "render:hero": "remotion render src/Root.tsx SierratechHero out/hero.mp4",
     "render:intro": "remotion render src/Root.tsx SierratechIntro out/intro.mp4 --codec=h264 --crf=28",
     "render:herobg": "remotion render src/Root.tsx SierratechHeroBg out/hero-bg.mp4 --codec=h264 --crf=28",
-    "render:all": "npm run render:hero && npm run render:intro && npm run render:herobg"
+    "render:auricular": "remotion render src/Root.tsx AuricularReparacion out/auricular-reparacion.mp4 --codec=h264 --crf=26",
+    "render:auricular-vertical": "remotion render src/Root.tsx AuricularReparacionVertical out/auricular-reparacion-vertical.mp4 --codec=h264 --crf=26",
+    "render:auricular-vertical-audio": "remotion render src/Root.tsx AuricularReparacionVerticalAudio out/auricular-reparacion-vertical-audio.mp4 --codec=h264 --crf=26 --pixel-format=yuv420p",
+    "render:comic": "remotion render src/Root.tsx SamsungA12MotionComic out/samsung-a12-comic.mp4 --codec=h264 --crf=28",
+    "render:all": "npm run render:hero && npm run render:intro && npm run render:herobg && npm run render:auricular && npm run render:auricular-vertical && npm run render:auricular-vertical-audio && npm run render:comic"
   },
   "dependencies": {
-    "@remotion/cli": "4.0.290",
+    "@remotion/cli": "^4.0.487",
     "@remotion/media": "^4.0.487",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "remotion": "4.0.290"
+    "remotion": "^4.0.487"
   },
   "devDependencies": {
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
+    "sharp": "^0.35.3",
     "typescript": "5.6.3"
   }
 }

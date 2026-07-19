@@ -27,3 +27,7 @@ studio/public/videos/*.mp4
 studio/public/videos/*.webm
 !studio/public/videos/.gitkeep
 studio/bundle/
+
+# Imagenes pre-procesadas (regenerables con npm run preprocess)
+studio/public/samsung-a12/
+studio/public/reparacion-auricular/
